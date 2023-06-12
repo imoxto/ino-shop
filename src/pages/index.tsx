@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-center bg-[#15162c] text-white">
-        {userData.user ? (
+        {userData.isSignedIn ? (
           <div>
             <UserButton afterSignOutUrl="/" />
           </div>
